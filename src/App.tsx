@@ -1,23 +1,19 @@
-import { TimerIcon } from 'lucide-react'
-import { Heading } from './components/Heading'
+import { Container } from './components/Container'
+import { Logo } from './components/Logo'
+import { Menu } from './components/Menu'
 
 export function App() {
   console.log('Oi')
 
   return (
-    <div>
-      <Heading>
-        Olá mundo!
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
-      <p className=''>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas
-        dicta maiores suscipit a nihil unde repellat cupiditate accusantium,
-        placeat hic rerum provident quibusdam ex minima, fugit saepe adipisci
-        iste.
-      </p>
-    </div>
+    <>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Menu />
+      </Container>
+    </>
   )
 }
