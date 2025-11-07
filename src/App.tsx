@@ -24,7 +24,12 @@ export function App() {
       <Container>
         <form className='flex flex-col items-center justify-center gap-6'>
           <div className='flex flex-col items-center justify-center gap-6'>
-            <DefaultInput type='text' />
+            <DefaultInput
+              type='text'
+              id='meuInput'
+              labelText='task'
+              placeholder='Digite algo'
+            />
           </div>
 
           <div className='flex flex-col items-center justify-center gap-6'>
